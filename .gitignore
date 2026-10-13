@@ -218,3 +218,14 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# Excluir bases de datos pesadas en raw, intermediate y processed
+data/raw/*
+data/intermediate/*
+data/processed/*
+
+# Excepción: Conservar .gitkeep y la muestra representativa (sample)
+!data/raw/.gitkeep
+!data/intermediate/.gitkeep
+!data/processed/.gitkeep
+!data/sample/
+!data/sample/*
