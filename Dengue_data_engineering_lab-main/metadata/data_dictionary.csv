@@ -1,0 +1,5 @@
+Variable,Type,Description,Source or transformation
+CVE_GEO,string (5 digits),Municipality key from state and municipality of residence,ENTIDAD_RES and MUNICIPIO_RES padded and concatenated
+EPI_YEAR,integer,ISO epidemiological year derived from symptom onset date,FECHA_SIGN_SINTOMAS
+EPI_WEEK,integer,ISO epidemiological week derived from symptom onset date,FECHA_SIGN_SINTOMAS
+CONFIRMED_CASES,integer,Number of confirmed dengue records in the municipality and epidemiological week,Count of rows where ESTATUS_CASO equals 2
